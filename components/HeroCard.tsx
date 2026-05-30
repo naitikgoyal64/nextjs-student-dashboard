@@ -1,11 +1,14 @@
 "use client"
 import { motion } from "framer-motion"
+type Props = {
+  name: string
+}
 
-export default function HeroCard() {
+export default function HeroCard({ name }: Props) {
   return (
     <motion.div
-
-      initial={{
+    
+    initial={{
         opacity: 0,
         y: 40
       }}
@@ -27,7 +30,7 @@ export default function HeroCard() {
       </p>
 
       <h1 className="text-3xl md:text-5xl font-bold mb-4 break-words">
-        Naitik
+        {name}
       </h1>
 
       <div className="flex items-center gap-3">

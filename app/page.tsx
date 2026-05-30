@@ -25,7 +25,9 @@ export default async function Home() {
       <section className="flex-1 p-6">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-          <HeroCard />
+          <HeroCard
+            name="Aman Sharma"
+          />
           {
             courses?.map((course, index) => (
 
